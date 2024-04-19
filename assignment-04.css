@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: large;
+}
+
+.databox ,.addressbox{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+h1{
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+body{
+    background-color: rgb(129, 4, 231);
+}

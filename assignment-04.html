@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sachins Amaflix Delivery Page</title>
+        <link rel="stylesheet" href="assignment-04.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">    
+    </head>
+<body>
+    <h1>Delivery Form</h1>
+        <form action="#" id="addUserForm" class="formm">
+            <h2> User</h2>
+            <div class="User">    
+                <label for="title">Title : </label>
+                <input type="text" id="title" name="title" placeholder="Enter Title" required >
+            </div>
+            <div class="User">
+                <label for="first_name">First Name : </label>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
+
+            <div class="User">
+                <label for="last_name">Last Name : </label>
+                <input type="text" id="last_name" name="last_name" required><br>
+            </div>
+
+            <div class="User">
+                <label for="mobile">Mobile : </label>
+                <input type="text" id="mobile" name="mobile" required><br>
+            </div>
+
+            <div class="User">
+                <label for="email">Email : </label>
+                <input type="email" id="email" name="email" required><br>
+            </div>
+
+<br>
+            <h2> Home Address</h2>
+            <div class="Home">
+                <label for="address_line_1">Address Line 1 : </label>
+                <input type="text" id="address_line_1" name="address_line_1" required><br>
+            </div>
+
+            <div class="Home">
+                <label for="address_line_2">Address Line 2 : </label>
+                <input type="text" id="address_line_2" name="address_line_2"><br>
+            </div>
+
+            <div class="Home">
+                <label for="town">Town : </label>
+                <input type="text" id="town" name="town" required><br>
+            </div>
+
+            <div class="Home">
+                <label for="county_city">County/City : </label>
+                <input type="text" id="county_city" name="county_city" required><br>
+            </div>
+
+            <div class="Home">
+                <label for="eircode">Eircode : </label>
+                <input type="text" id="eircode" name="eircode"><br>
+            </div>
+            <br>
+            <h2> Shipping Address</h2>
+            <div id="shippingAddressFields">
+                <label for="shipping_address_line_1">Shipping Address Line 1:</label>
+                <input type="text" id="shipping_address_line_1" name="shipping_address_line_1" required>
+                <br>
+                <label for="shipping_address_line_2">Shipping Address Line 2:</label>
+                <input type="text" id="shipping_address_line_2" name="shipping_address_line_2">
+                <br>
+                <label for="shipping_town">Shipping Town:</label>
+                <input type="text" id="shipping_town" name="shipping_town" required>
+                <br>
+                <label for="shipping_county_city">Shipping County/City:</label>
+                <input type="text" id="shipping_county_city" name="shipping_county_city" required>
+                <br>
+                <label for="shipping_eircode">Shipping Eircode:</label>
+                <input type="text" id="shipping_eircode" name="shipping_eircode">
+                <br>
+                <label for="copyAddressCheckbox">Use same as home</label>
+                <input type="checkbox" id="copyAddressCheckbox" onclick="toggleShippingAddress()">
+            </div>
+            <br>
+            <button type="button" onclick="addUser()">Add User</button><br>
+        </form>
+        <br>
+    <button type="button" onclick="displayUsers()">Display Users</button> 
+    <br>
+
+    <input type="text" id="searchInput" placeholder="Search by first name...">
+            <button onclick="searchUsers()">Search</button>
+            <div id="searchResults"></div>
+            <button type="button" onclick="displayUsers()">Display ALL Users</button>
+    <br>
+    <div id="userDataBox"></div> 
+    <div id="homeAddressDataBox"></div>
+    <script src="assignment-04.js"></script> 
+</body>
+</html>
+
+<!-- Before starting the code 
+    1: Type npm init
+    2: then npm i express
+    3: then npm i mysql
+    4: then node db.js-->
+
+    <!--
+        Name:Sachin
+        Student Number:22251923
+    -->
